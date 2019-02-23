@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game.gd" type="Script" id=1]
+
+[node name="main" type="Spatial"]
+
+[node name="game" type="Spatial" parent="."]
+script = ExtResource( 1 )
+
+[node name="serverUi" type="Control" parent="."]
+margin_right = 789.0
+margin_bottom = 343.0
+
+[node name="playersCount" type="Label" parent="serverUi"]
+margin_right = 65.0
+margin_bottom = 20.0
+text = "0 PLAYERS"
+
+[node name="playersList" type="ItemList" parent="serverUi"]
+margin_top = 20.0
+margin_right = 200.0
+margin_bottom = 160.0
+
+[node name="unitsCount" type="Label" parent="serverUi"]
+margin_left = 220.0
+margin_right = 271.0
+margin_bottom = 17.0
+text = "0 UNITS"
+
+[node name="unitsList" type="ItemList" parent="serverUi"]
+margin_left = 220.0
+margin_top = 20.0
+margin_right = 420.0
+margin_bottom = 160.0
+
+[node name="towersCount" type="Label" parent="serverUi"]
+margin_left = 440.0
+margin_right = 491.0
+margin_bottom = 17.0
+text = "0 TOWERS"
+
+[node name="towersList" type="ItemList" parent="serverUi"]
+margin_left = 440.0
+margin_top = 20.0
+margin_right = 640.0
+margin_bottom = 160.0
+
